@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.form {
+  margin: 3rem;
+}
+
+.grid {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-gap: 0 20px;
+  grid-template-areas:
+    "number number number number . . . . . . . ."
+    "nip nip nip nip payerName payerName payerName payerName payerName payerName payerName payerName"
+    "contactName contactName contactName contactName contactName contactName contactName contactName phone phone phone phone"
+    "country country country zipCode zipCode zipCode city city city city city city"
+    "street street street street street street street street street street street street"
+    "email email email email email email email email email email email email";
+}
